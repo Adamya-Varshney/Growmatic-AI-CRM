@@ -1,0 +1,6 @@
+{
+  "name": "Growmatic",
+  "description": "AI marketing co-pilot for Indian small businesses",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

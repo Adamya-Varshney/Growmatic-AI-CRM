@@ -1,0 +1,16 @@
+{
+  "name": "growmatic-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "bot-server.mjs",
+  "scripts": {
+    "start": "node bot-server.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
