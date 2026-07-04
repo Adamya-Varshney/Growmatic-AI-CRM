@@ -268,7 +268,9 @@ const pollUpdates = async () => {
       limit: 10
     });
 
-    if (response.ok && response.result?.length > 0) {
+    if (!response.ok) {
+      console.error('Telegram API error:', response.error_code, response.description);
+    } else if (response.result?.length > 0) {
       for (const update of response.result) {
         offset = update.update_id + 1;
         if (update.message) {
